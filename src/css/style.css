@@ -114,25 +114,18 @@ Home
 }
 
 
-.selections-practice button {
+.selections-practice a {
 	border-radius: 90px;
 	border: none;
 	background: #FFC875;
-	display: flex;
-	padding: 0 70%;
-	justify-content: center;
 	font-family: 'Kanit', sans-serif;
 	font-size: calc(20px + 2vw);
 	font-weight: 600;
 	text-decoration: none;
 	color: #675741;
-	width: 100%;
-	align-items: center;
-}
+	text-align: center;
+	padding: 0 5%;
 
-.selections-practice a {
-	text-decoration: none;
-	width: 100%;
 }
 
 
@@ -234,9 +227,9 @@ Home
 	margin-top: 10%;
 }
 
-.result h2 {
+.result h1 {
 	font-family: 'KoHo', sans-serif;
-	font-size: calc(30px + 5vw);
+	font-size: calc(20px + 5vw);
 	color: #4545A0;
 	margin: 10% 0;
 	text-align: center;
@@ -249,12 +242,12 @@ Home
 	margin: 0 auto;
 }
 
-.result button {
+.result a {
 	background: #FFC875;
 	border-radius: 90px;
 	border: none;
 	display: flex;
-	padding: 5%;
+	padding: 2%;
 	align-items: center;
 	text-align: center;
 	font-family: 'Kanit', sans-serif;
@@ -262,14 +255,12 @@ Home
 	font-weight: 600;
 	text-decoration: none;
 	color: #675741;
-}
-
-.result a {
 	display: flex;
 	justify-content: center;
 	margin-top: 10%;
 	text-decoration: none;
 }
+
 
 /*
 CSS controls the styling of the page.

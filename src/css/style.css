@@ -169,6 +169,22 @@ Home
 	max-width: 250px;
 }
 
+.animated-image {
+	display: none;
+}
+
+.audio {
+	margin: 5%;
+}
+
+.left-column:hover .static-image {
+	display: none;
+}
+
+.left-column:hover .animated-image {
+	display: block;
+}
+
 .right-arrow {
 	left: 2%;
 }
@@ -260,6 +276,7 @@ Home
 	margin-top: 10%;
 	text-decoration: none;
 }
+
 
 
 /*

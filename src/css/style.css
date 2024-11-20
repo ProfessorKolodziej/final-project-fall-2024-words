@@ -280,8 +280,8 @@ Home
 /* Progress bar */
 .progress-bar {
 	margin-left: 10px;
-    background-color: #c2c0c0; 
-    z-index: 1000; 
+	background-color: #c2c0c0;
+	z-index: 1000;
 	position: absolute;
 	mix-blend-mode: darken;
 	bottom: 70%;
@@ -293,30 +293,175 @@ Home
 
 .progress {
 	height: 100%;
-	width: 0%; 
+	width: 0%;
 	background-color: #06921d;
-	transition: 0.5s ease; /* Use ChatGPT to find how to add smooth transition */
+	transition: width 0.5s ease-in-out;
+	/* Use ChatGPT to find how to add smooth transition */
 }
 
 /* Markers for word images */
 .progress-markers {
 	position: absolute;
-	top: -100%; 
+	top: -100%;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 }
+
+
+
+
+
 
 /* Use ChatGPT to create visual effects to control the display and hiding of marks on the progress bar.*/
 .marker {
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
-	visibility: hidden;/* Initially hidden, JS controls display */
-	transition: opacity 0.5s ease;
-	opacity: 0; 
+	visibility: hidden;
+	/* Initially hidden, JS controls display */
+	transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
 }
 
+/*practice page*/
+.practice-page {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+/* Words Column */
+.words-column {
+	flex: 1;
+	text-align: center;
+}
+
+.words-column h2 {
+	margin-bottom: 20px;
+	font-size: 1.5rem;
+	color: #333;
+}
+
+.clickable-word {
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 2px solid #ddd;
+	border-radius: 4px;
+	background-color: #fefefe;
+	cursor: pointer;
+	transition: background-color 0.2s, border-color 0.2s;
+}
+
+.clickable-word:hover {
+	background-color: #f0f8ff;
+	border-color: #87cefa;
+}
+
+/* Images Column */
+.images-column {
+	flex: 1;
+	text-align: center;
+}
+
+.images-column img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+	border: 2px solid #ddd;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: transform 0.2s, border-color 0.2s;
+}
+
+.images-column img:hover {
+	transform: scale(1.05);
+	border-color: #87cefa;
+}
+
+/* Selected, Correct, and Incorrect States */
+.selected {
+	border: 2px solid blue;
+	background-color: #f0f8ff;
+}
+
+.correct {
+	border: 2px solid green;
+	background-color: #d4f8d4;
+}
+
+.incorrect {
+	border: 2px solid red;
+	background-color: #f8d4d4;
+}
+
+/* Additional styles for selected, correct, and incorrect states */
+.selected {
+	border: 2px solid blue;
+	background-color: #f0f8ff;
+}
+
+.correct {
+	border: 2px solid green;
+	background-color: #d4f8d4;
+}
+
+.incorrect {
+	border: 2px solid red;
+	background-color: #f8d4d4;
+}
+
+.feedback-container {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.feedback-image {
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+	transition: transform 0.3s ease;
+}
+
+.feedback-image.bump-up {
+	animation: bump 0.3s ease-out;
+}
+
+@keyframes bump {
+	0% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-10px);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+
+.feedback-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 300px;
+	/* Set height for visibility */
+	width: 100%;
+	/* Full width of the page */
+	border: 2px dashed #ccc;
+	/* Optional: dashed border to indicate container area */
+	margin: 20px auto;
+	position: relative;
+}
+
+.feedback-container img {
+	max-width: 100%;
+	height: auto;
+	object-fit: contain;
+}
 
 /*
 CSS controls the styling of the page.

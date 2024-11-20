@@ -277,6 +277,46 @@ Home
 	text-decoration: none;
 }
 
+/* Progress bar */
+.progress-bar {
+	margin-left: 10px;
+    background-color: #c2c0c0; 
+    z-index: 1000; 
+	position: absolute;
+	mix-blend-mode: darken;
+	bottom: 70%;
+	width: 90%;
+	height: 2%;
+	max-width: 600px;
+	margin-left: -32%;
+}
+
+.progress {
+	height: 100%;
+	width: 0%; 
+	background-color: #06921d;
+	transition: width 0.5s ease-in-out; /* Use ChatGPT to find how to add smooth transition */
+}
+
+/* Markers for word images */
+.progress-markers {
+	position: absolute;
+	top: -100%; 
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Use ChatGPT to create visual effects to control the display and hiding of marks on the progress bar.*/
+.marker {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	visibility: hidden;/* Initially hidden, JS controls display */
+	transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out;
+	opacity: 0; 
+    transition: opacity 0.5s ease-in-out;
+}
 
 
 /*

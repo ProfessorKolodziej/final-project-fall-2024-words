@@ -308,22 +308,7 @@ Home
 	justify-content: space-between;
 }
 
-
-
-
-
-
 /* Use ChatGPT to create visual effects to control the display and hiding of marks on the progress bar.*/
-.marker {
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
-	visibility: hidden;
-	/* Initially hidden, JS controls display */
-	transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out;
-	opacity: 0;
-	transition: opacity 0.5s ease-in-out;
-}
 
 /*practice page*/
 .practice-page {
@@ -411,37 +396,6 @@ Home
 	border: 2px solid red;
 	background-color: #f8d4d4;
 }
-
-.feedback-container {
-	margin-top: 20px;
-	text-align: center;
-}
-
-.feedback-image {
-	width: 50px;
-	height: 50px;
-	margin: 10px;
-	transition: transform 0.3s ease;
-}
-
-.feedback-image.bump-up {
-	animation: bump 0.3s ease-out;
-}
-
-@keyframes bump {
-	0% {
-		transform: translateY(0);
-	}
-
-	50% {
-		transform: translateY(-10px);
-	}
-
-	100% {
-		transform: translateY(0);
-	}
-}
-
 
 .feedback-container {
 	display: flex;

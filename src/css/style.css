@@ -295,7 +295,7 @@ Home
 	height: 100%;
 	width: 0%; 
 	background-color: #06921d;
-	transition: width 0.5s ease-in-out; /* Use ChatGPT to find how to add smooth transition */
+	transition: 0.5s ease; /* Use ChatGPT to find how to add smooth transition */
 }
 
 /* Markers for word images */
@@ -313,9 +313,8 @@ Home
 	height: 40px;
 	border-radius: 50%;
 	visibility: hidden;/* Initially hidden, JS controls display */
-	transition: visibility 0.1s ease-in-out, opacity 0.1s ease-in-out;
+	transition: opacity 0.5s ease;
 	opacity: 0; 
-    transition: opacity 0.5s ease-in-out;
 }
 
 

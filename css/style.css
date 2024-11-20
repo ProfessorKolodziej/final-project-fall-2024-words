@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playpen+Sans:wght@100..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playpen+Sans:wght@100..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+}
+
+.content-container {
+	background: #E4F5FF;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 5%;
+	min-height: 100vh;
+	/* Using ChatGPT to know how to fill the entire viewport height */
+	width: 100vw;
+}
+
+/*
+Home
+*/
+
+.content-container h1 {
+	color: #4545A0;
+	text-align: center;
+	font-family: 'KoHo', sans-serif;
+	font-size: calc(80px + 5vw);
+	margin-bottom: 12%;
+	text-decoration: none;
+}
+
+.one-button {
+	background: #FFC875;
+	border-radius: 90px;
+	border: none;
+	display: flex;
+	padding: 5%;
+	align-items: center;
+	text-align: center;
+	font-family: 'Kanit', sans-serif;
+	font-size: calc(20px + 2vw);
+	font-weight: 600;
+	text-decoration: none;
+	color: #675741;
+}
+
+/*Choices*/
+
+.navigation {
+	color: #4545A0;
+	background-color: #8FBBD4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 8%;
+	position: relative;
+	width: 100%;
+	margin-top: 0;
+	position: fixed;
+	top: 0;
+	height: 15%;
+}
+
+.navigation h2,
+.navigation h3 {
+	font-size: calc(45px + 2vw) !important;
+	margin: 0;
+}
+
+.navigation a {
+	position: absolute;
+	font-size: calc(50px + 2vw);
+	margin: 0;
+	top: 20%;
+	left: 10%;
+	text-decoration: none;
+}
+
+.selections {
+	width: 50%;
+	margin-top: 10%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.selections a {
+	border-radius: 90px;
+	border: none;
+	background: #FFC875;
+	display: flex;
+	padding: 0 60%;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Kanit', sans-serif;
+	font-size: calc(20px + 2vw);
+	font-weight: 600;
+	margin: 15% 0;
+	width: 100%;
+	text-decoration: none;
+	color: #675741;
+}
+
+.selections-practice {
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 30%;
+}
+
+
+.selections-practice a {
+	border-radius: 90px;
+	border: none;
+	background: #FFC875;
+	font-family: 'Kanit', sans-serif;
+	font-size: calc(20px + 2vw);
+	font-weight: 600;
+	text-decoration: none;
+	color: #675741;
+	text-align: center;
+	padding: 0 5%;
+
+}
+
+
+
+/*learning pages*/
+
+.flashcards {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border: 2px solid black;
+	background-color: white;
+	width: 90%;
+	max-width: 600px;
+	padding: 5%;
+	margin: 0 auto;
+	position: relative;
+	box-sizing: border-box;
+	height: 100%;
+	overflow: hidden;
+}
+
+.left-column,
+.right-column {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.right-column p {
+	font-size: calc(16px + 1vw);
+	margin-bottom: 5%;
+	font-family: 'Kanit', sans-serif;
+}
+
+.left-column img {
+	width: 80%;
+	height: auto;
+	max-width: 250px;
+}
+
+.animated-image {
+	display: none;
+}
+
+.audio {
+	margin: 5%;
+}
+
+.left-column:hover .static-image {
+	display: none;
+}
+
+.left-column:hover .animated-image {
+	display: block;
+}
+
+.right-arrow {
+	left: 2%;
+}
+
+.left-arrow {
+	right: 2%;
+}
+
+.volume {
+	font-size: calc(16px + 0.5vw);
+	color: black;
+	margin-top: 5%;
+}
+
+
+.review-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid black;
+	background-color: white;
+	width: 80%;
+	max-width: 600px;
+	padding: 5%;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.review-columns {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.review_left-column {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.review_right-column {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.result {
+	display: flex;
+	flex-direction: column;
+	margin-top: 10%;
+}
+
+.result h1 {
+	font-family: 'KoHo', sans-serif;
+	font-size: calc(20px + 5vw);
+	color: #4545A0;
+	margin: 10% 0;
+	text-align: center;
+}
+
+.result img {
+	width: 50%;
+	max-width: 50%;
+	display: block;
+	margin: 0 auto;
+}
+
+.result a {
+	background: #FFC875;
+	border-radius: 90px;
+	border: none;
+	display: flex;
+	padding: 2%;
+	align-items: center;
+	text-align: center;
+	font-family: 'Kanit', sans-serif;
+	font-size: calc(20px + 2vw);
+	font-weight: 600;
+	text-decoration: none;
+	color: #675741;
+	display: flex;
+	justify-content: center;
+	margin-top: 10%;
+	text-decoration: none;
+}
+
+/* Progress bar */
+.progress-bar {
+	margin-left: 10px;
+	background-color: #c2c0c0;
+	z-index: 1000;
+	position: absolute;
+	mix-blend-mode: darken;
+	bottom: 70%;
+	width: 90%;
+	height: 2%;
+	max-width: 600px;
+	margin-left: -32%;
+}
+
+.progress {
+	height: 100%;
+	width: 0%;
+	background-color: #06921d;
+	transition: width 0.5s ease-in-out;
+	/* Use ChatGPT to find how to add smooth transition */
+}
+
+/* Markers for word images */
+.progress-markers {
+	position: absolute;
+	top: -100%;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Use ChatGPT to create visual effects to control the display and hiding of marks on the progress bar.*/
+
+/*practice page*/
+.practice-page {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+/* Words Column */
+.words-column {
+	flex: 1;
+	text-align: center;
+}
+
+.words-column h2 {
+	margin-bottom: 20px;
+	font-size: 1.5rem;
+	color: #333;
+}
+
+.clickable-word {
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 2px solid #ddd;
+	border-radius: 4px;
+	background-color: #fefefe;
+	cursor: pointer;
+	transition: background-color 0.2s, border-color 0.2s;
+}
+
+.clickable-word:hover {
+	background-color: #f0f8ff;
+	border-color: #87cefa;
+}
+
+/* Images Column */
+.images-column {
+	flex: 1;
+	text-align: center;
+}
+
+.images-column img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+	border: 2px solid #ddd;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: transform 0.2s, border-color 0.2s;
+}
+
+.images-column img:hover {
+	transform: scale(1.05);
+	border-color: #87cefa;
+}
+
+/* Selected, Correct, and Incorrect States */
+.selected {
+	border: 2px solid blue;
+	background-color: #f0f8ff;
+}
+
+.correct {
+	border: 2px solid green;
+	background-color: #d4f8d4;
+}
+
+.incorrect {
+	border: 2px solid red;
+	background-color: #f8d4d4;
+}
+
+/* Additional styles for selected, correct, and incorrect states */
+.selected {
+	border: 2px solid blue;
+	background-color: #f0f8ff;
+}
+
+.correct {
+	border: 2px solid green;
+	background-color: #d4f8d4;
+}
+
+.incorrect {
+	border: 2px solid red;
+	background-color: #f8d4d4;
+}
+
+.feedback-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 300px;
+	/* Set height for visibility */
+	width: 100%;
+	/* Full width of the page */
+	border: 2px dashed #ccc;
+	/* Optional: dashed border to indicate container area */
+	margin: 20px auto;
+	position: relative;
+}
+
+.feedback-container img {
+	max-width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+
+/*
+CSS controls the styling of the page.
+You can write a color in directly, or use variables.
+Try changing the color from blue to red in the
+primary color variable below.
+*/
+
+
+/*
+CSS doesn't allow variables to be used in media
+queries just yet, but you can use these values
+to help you out.
+
+	--size-xs: 320px;
+	--size-sm: 480px;
+	--size-md: 768px;
+	--size-lg: 1024px;
+	--size-xl: 1200px;
+*/

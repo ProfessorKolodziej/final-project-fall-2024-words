@@ -313,7 +313,7 @@ Home
 	height: 40px;
 	border-radius: 50%;
 	visibility: hidden;/* Initially hidden, JS controls display */
-	transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out;
+	transition: visibility 0.1s ease-in-out, opacity 0.1s ease-in-out;
 	opacity: 0; 
     transition: opacity 0.5s ease-in-out;
 }

@@ -12,18 +12,28 @@
 
 <body>
 	<main class="content-container">
-		<h2>连线题</h2>
-		<p>苹果</p>
-		<p>香蕉</p>
-		<p>芒果</p>
-		<p>橘子</p>
-		<p>菠萝</p>
-		<img src="images/apple.png" alt="一个卡通风格的图像，上面有一个鲜红的苹果和一片绿叶。" />
-		<img src="images/banana.png" alt="半剥皮香蕉的卡通风格图像。" />
-		<img src="images/mango.png" alt="卡通风格的芒果形象，颜色为鲜艳的黄橙色，顶部附有一片绿叶，看起来清新俏皮。" />
-		<img src="images/orange.jpg" alt="一个卡通风格的橙子形象，带着友好的微笑，挥动一只手向大家打招呼。" />
-		<img src="images/pineapple.jpg" alt="一个卡通风格的菠萝图像，其主体为亮黄色，顶部有绿色尖刺状的叶子。" />
-		<a href="result1 CHN Color.html">提交</a>
+		<section class="navigation">
+			<p><a href="index.html">⌂</a></p>
+			<h2>连线题</h2>
+		</section>
+		<section class="practice-page">
+			<div class="words-column">
+				<div class="feedback-container"></div>
+				<!-- ask gpt how make the practice page that connects all pages -->
+				<p class="clickable-word 苹果">苹果</p>
+				<p class="clickable-word 香蕉">香蕉</p>
+				<p class="clickable-word 芒果">芒果</p>
+				<p class="clickable-word 橘子">橘子</p>
+				<p class="clickable-word 菠萝">菠萝</p>
+			</div>
+			<div class="images-column">
+				<img src="images/apple.png" alt="一个卡通风格的图像，上面有一个鲜红的苹果和一片绿叶。" class="clickable-image 苹果" />
+				<img src="images/banana.png" alt="半剥皮香蕉的卡通风格图像。" class="clickable-image 香蕉" />
+				<img src="images/mango.png" alt="卡通风格的芒果形象，颜色为鲜艳的黄橙色，顶部附有一片绿叶，看起来清新俏皮。" class="clickable-image 芒果" />
+				<img src="images/orange.jpg" alt="一个卡通风格的橙子形象，带着友好的微笑，挥动一只手向大家打招呼。" class="clickable-image 橘子" />
+				<img src="images/pineapple.jpg" alt="一个卡通风格的菠萝图像，其主体为亮黄色，顶部有绿色尖刺状的叶子。" class="clickable-image 菠萝" />
+			</div>
+		</section>
 	</main>
 	<script src="js/scripts.js"></script>
 </body>

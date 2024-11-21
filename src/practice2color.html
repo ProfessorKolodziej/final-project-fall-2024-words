@@ -12,18 +12,28 @@
 
 <body>
 	<main class="content-container">
-		<h2>practice</h2>
-		<p>Red</p>
-		<p>Blue</p>
-		<p>Green</p>
-		<p>Yellow</p>
-		<p>Purple</p>
-		<img src="images/red.jpg" alt="An image of the color red." />
-		<img src="images/Blue.png" alt="An image of the color blue." />
-		<img src="images/Green.png" alt="An image of the color green." />
-		<img src="images/Yellow.png" alt="An image of the color yellow." />
-		<img src="images/Purple.png" alt="An image of the color purple." />
-		<a href="result1color.html">Check</a>
+		<section class="navigation">
+			<p><a href="index.html">⌂</a></p>
+			<h2>Practice</h2>
+		</section>
+		<section class="practice-page">
+			<div class="words-column">
+				<div class="feedback-container"></div>
+				<!-- ask gpt how make the practice page that connects all pages -->
+				<p class="clickable-word Red">Red</p>
+				<p class="clickable-word Blue">Blue</p>
+				<p class="clickable-word Green">Green</p>
+				<p class="clickable-word Yellow ">Yellow</p>
+				<p class="clickable-word Purple">Purple</p>
+			</div>
+			<div class="images-column">
+				<img src="images/red.jpg" alt="An image of the color red." class="clickable-image Red" />
+				<img src="images/Blue.png" alt="An image of the color blue." class="clickable-image Blue" />
+				<img src="images/Green.png" alt="An image of the color green." class="clickable-image Green" />
+				<img src="images/Yellow.png" alt="An image of the color yellow." class="clickable-image Yellow" />
+				<img src="images/Purple.png" alt="An image of the color purple." class="clickable-image Purple" />
+			</div>
+		</section>
 	</main>
 	<script src="js/scripts.js"></script>
 </body>

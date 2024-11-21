@@ -12,18 +12,28 @@
 
 <body>
 	<main class="content-container">
-		<h2>连线题</h2>
-		<p>红色</p>
-		<p>蓝色</p>
-		<p>绿色</p>
-		<p>黄色</p>
-		<p>紫色</p>
-		<img src="images/red.jpg" alt="一张红色的图片。" />
-		<img src="images/Blue.png" alt="一张蓝色的图片。" />
-		<img src="images/Green.png" alt="一张绿色的图片。" />
-		<img src="images/Yellow.png" alt="一张黄色的图片。" />
-		<img src="images/Purple.png" alt="一张紫色的图片。" />
-		<a href="result1 CHN Fruit.html">提交</a>
+		<section class="navigation">
+			<p><a href="index.html">⌂</a></p>
+			<h2>连线题</h2>
+		</section>
+		<section class="practice-page">
+			<div class="words-column">
+				<div class="feedback-container"></div>
+				<!-- ask gpt how make the practice page that connects all pages -->
+				<p class="clickable-word 红色">红色</p>
+				<p class="clickable-word 蓝色">蓝色</p>
+				<p class="clickable-word 绿色">绿色</p>
+				<p class="clickable-word 黄色">黄色</p>
+				<p class="clickable-word 紫色">紫色</p>
+			</div>
+			<div class="images-column">
+				<img src="images/red.jpg" alt="一张红色的图片。" class="clickable-image 红色" />
+				<img src="images/Blue.png" alt="一张蓝色的图片。" class="clickable-image 蓝色" />
+				<img src="images/Green.png" alt="一张绿色的图片。" class="clickable-image 绿色" />
+				<img src="images/Yellow.png" alt="一张黄色的图片。" class="clickable-image 黄色" />
+				<img src="images/Purple.png" alt="一张紫色的图片。" class="clickable-image 紫色" />
+			</div>
+		</section>
 	</main>
 	<script src="js/scripts.js"></script>
 </body>

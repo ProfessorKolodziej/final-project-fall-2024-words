@@ -323,7 +323,6 @@ Home
   text-decoration: none;
 }
 
-
 /* Progress bar */
 .progress-bar {
   margin-left: 10px;
@@ -336,52 +335,37 @@ Home
   height: 2%;
   max-width: 600px;
   margin-left: -32%;
-}
-
-
-.progress {
+ }
+ 
+ 
+ .progress {
   height: 100%;
   width: 0%;
   background-color: #06921d;
-  transition: 0.5s ease;
-  /* Use ChatGPT to find how to add smooth transition */
-  transition: width 0.5s ease-in-out;
-  /* Use ChatGPT to find how to add smooth transition */
-  transition: 0.5s ease;
-  /* Use ChatGPT to find how to add smooth transition */
-}
-
-
-/* Markers for word images */
-.progress-markers {
+  transition: 0.3s ease; /* Use ChatGPT to find how to add smooth transition */
+ }
+ 
+ 
+ /* Markers for word images */
+ .progress-markers {
   position: absolute;
   top: -100%;
   width: 100%;
   display: flex;
   justify-content: space-between;
-}
-
-
-/* Use ChatGPT to create visual effects to control the display and hiding of marks on the progress bar.*/
-.marker {
+ }
+ 
+ 
+ /* Use ChatGPT to create visual effects to control the display and hiding of marks on the progress bar.*/
+ .marker {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  visibility: hidden;
-  /* Initially hidden, JS controls display */
+  visibility: hidden;/* Initially hidden, JS controls display */
   transition: opacity 0.5s ease;
   opacity: 0;
-  visibility: hidden;
-  /* Initially hidden, JS controls display */
-  transition: visibility 0.1s ease-in-out, opacity 0.1s ease-in-out;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-  visibility: hidden;
-  /* Initially hidden, JS controls display */
-  transition: opacity 0.5s ease;
-  opacity: 0;
-}
-
+ }
+ 
 
 /*practice page*/
 .practice-page {

@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playpen+Sans:wght@100..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playpen+Sans:wght@100..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Hachi+Maru+Pop&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playpen+Sans:wght@100..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Yuji+Mai&family=Yusei+Magic&display=swap');
 
 * {
 	margin: 0;
@@ -38,6 +37,15 @@ Home
 	text-decoration: none;
 }
 
+.content-container h2,
+.content-container h3 {
+	color: #4545A0;
+	text-align: center;
+	font-family: 'Sour Gummy', sans-serif;
+	font-size: calc(85px + 5vw);
+	text-decoration: none;
+	font-weight: 500;
+}
 
 .one-button {
 	background: #FFC875;
@@ -316,7 +324,6 @@ Home
 	text-decoration: none;
 }
 
-
 /* Progress bar */
 .progress-bar {
 	margin-left: 10px;
@@ -336,11 +343,7 @@ Home
 	height: 100%;
 	width: 0%;
 	background-color: #06921d;
-	transition: 0.5s ease;
-	/* Use ChatGPT to find how to add smooth transition */
-	transition: width 0.5s ease-in-out;
-	/* Use ChatGPT to find how to add smooth transition */
-	transition: 0.5s ease;
+	transition: 0.3s ease;
 	/* Use ChatGPT to find how to add smooth transition */
 }
 
@@ -360,15 +363,6 @@ Home
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
-	visibility: hidden;
-	/* Initially hidden, JS controls display */
-	transition: opacity 0.5s ease;
-	opacity: 0;
-	visibility: hidden;
-	/* Initially hidden, JS controls display */
-	transition: visibility 0.1s ease-in-out, opacity 0.1s ease-in-out;
-	opacity: 0;
-	transition: opacity 0.5s ease-in-out;
 	visibility: hidden;
 	/* Initially hidden, JS controls display */
 	transition: opacity 0.5s ease;

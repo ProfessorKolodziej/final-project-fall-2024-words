@@ -73,10 +73,9 @@ Home
 	justify-content: center;
 	align-items: center;
 	padding: 8%;
-	position: relative;
+	position: fixed;
 	width: 100%;
 	margin-top: 0;
-	position: fixed;
 	top: 0;
 	height: 15%;
 }
@@ -92,9 +91,10 @@ Home
 .navigation a {
 	position: absolute;
 	font-size: calc(50px + 2vw);
+	left: 5%;
+	top: 50%;
+	transform: translateY(-50%);
 	margin: 0;
-	top: 20%;
-	left: 10%;
 	text-decoration: none;
 }
 
@@ -131,7 +131,7 @@ Home
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	gap: 30%;
+	gap: 25%;
 }
 
 
@@ -154,9 +154,6 @@ Home
 
 
 
-
-
-
 /*learning pages*/
 
 
@@ -167,13 +164,14 @@ Home
 	border: 2px solid black;
 	background-color: white;
 	width: 90%;
-	max-width: 600px;
+	max-width: 800px;
 	padding: 5%;
 	margin: 0 auto;
 	position: relative;
 	box-sizing: border-box;
 	height: 100%;
 	overflow: hidden;
+	margin-top: 20%;
 }
 
 
@@ -188,26 +186,21 @@ Home
 
 
 .right-column p {
-	font-size: calc(16px + 1vw);
-	margin-bottom: 5%;
+	font-size: calc(30px + 2vw);
+	margin: 5% 0;
 	font-family: 'Kanit', sans-serif;
 }
 
 
 .left-column img {
-	width: 80%;
+	width: 100%;
 	height: auto;
-	max-width: 250px;
+	max-width: 500px;
 }
 
 
 .animated-image {
 	display: none;
-}
-
-
-.audio {
-	margin: 5%;
 }
 
 
@@ -223,21 +216,27 @@ Home
 
 .right-arrow {
 	left: 2%;
+	font-size: calc(15px + 2vw);
 }
 
+.right-arrow a {
+	text-decoration: none !important;
+}
 
 .left-arrow {
 	right: 2%;
+	font-size: calc(15px + 2vw);
 }
 
-
-.volume {
-	font-size: calc(16px + 0.5vw);
-	color: black;
-	margin-top: 5%;
+.left-arrow a {
+	text-decoration: none;
 }
 
-
+.audio {
+	width: 100% !important;
+	max-width: 1000px !important;
+	margin: 5% auto !important;
+}
 
 
 .review-list {
@@ -546,8 +545,6 @@ Home
 		transform: translateY(0);
 	}
 }
-
-
 
 
 .feedback-container {

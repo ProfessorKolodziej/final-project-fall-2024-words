@@ -84,9 +84,11 @@ Home
 .navigation h2,
 .navigation h3 {
 	font-size: calc(45px + 2vw) !important;
-	margin: 0;
 }
 
+.navigation .practice-nav {
+	font-size: calc(40px + 2vw) !important;
+}
 
 .navigation a {
 	position: absolute;
@@ -219,17 +221,16 @@ Home
 	font-size: calc(15px + 2vw);
 }
 
-.right-arrow a {
-	text-decoration: none !important;
-}
 
 .left-arrow {
 	right: 2%;
 	font-size: calc(15px + 2vw);
 }
 
+.right-arrow a,
 .left-arrow a {
-	text-decoration: none;
+	text-decoration: none !important;
+	display: inline-block;
 }
 
 .audio {
@@ -238,29 +239,38 @@ Home
 	margin: 5% auto !important;
 }
 
-
 .review-list {
 	display: flex;
-	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	border: 2px solid black;
 	background-color: white;
-	width: 80%;
-	max-width: 600px;
+	width: 100%;
+	max-width: 800px;
 	padding: 5%;
-	box-sizing: border-box;
+	margin: 0 auto;
 	position: relative;
+	box-sizing: border-box;
+	height: 100%;
+	overflow: hidden;
+	margin-top: 20%;
+	padding: 5%;
+	height: 50vh;
 }
-
 
 .review-columns {
 	display: flex;
-	justify-content: space-between;
 	width: 100%;
-	margin-bottom: 15px;
+	justify-content: space-between;
+	align-items: flex-start;
 }
 
+.review_left-column,
+.review_right-column {
+	font-size: calc(15px + 1.5vw);
+	display: flex;
+	flex-direction: column;
+}
 
 .review_left-column {
 	flex: 1;
@@ -374,7 +384,7 @@ Home
 	display: flex;
 	justify-content: space-between;
 	gap: 20px;
-	margin-top: 25%;
+	margin-top: 18%;
 }
 
 
@@ -384,14 +394,6 @@ Home
 	text-align: center;
 }
 
-
-.words-column h2 {
-	margin-bottom: 20px;
-	font-size: 1.5rem;
-	color: #333;
-}
-
-
 .clickable-word {
 	padding: 10px;
 	margin-bottom: 10px;
@@ -399,6 +401,7 @@ Home
 	border-radius: 4px;
 	background-color: #fefefe;
 	cursor: pointer;
+	font-size: calc(20px + 2vw) !important;
 	transition: background-color 0.2s, border-color 0.2s;
 }
 
@@ -415,11 +418,10 @@ Home
 	text-align: center;
 }
 
-
 .images-column img {
-	max-width: 100%;
+	width: auto;
+	max-width: 50%;
 	height: auto;
-	margin-bottom: 10px;
 	border: 2px solid #ddd;
 	border-radius: 4px;
 	cursor: pointer;
@@ -471,11 +473,6 @@ Home
 }
 
 
-.feedback-container {
-	margin-top: 20px;
-	text-align: center;
-}
-
 .feedback-image {
 	width: 50px;
 	height: 50px;
@@ -507,20 +504,16 @@ Home
 	justify-content: center;
 	align-items: center;
 	height: 300px;
-	/* Set height for visibility */
 	width: 100%;
-	/* Full width of the page */
-	border: 2px dashed #ccc;
-	/* Optional: dashed border to indicate container area */
 	margin: 20px auto;
 	position: relative;
 }
 
 
 .feedback-image {
-	width: 50px;
-	height: 50px;
-	margin: 10px;
+	width: 60%;
+	height: auto;
+	max-width: 50%;
 	transition: transform 0.3s ease;
 }
 
@@ -552,11 +545,7 @@ Home
 	justify-content: center;
 	align-items: center;
 	height: 300px;
-	/* Set height for visibility */
 	width: 100%;
-	/* Full width of the page */
-	border: 2px dashed #ccc;
-	/* Optional: dashed border to indicate container area */
 	margin: 20px auto;
 	position: relative;
 }

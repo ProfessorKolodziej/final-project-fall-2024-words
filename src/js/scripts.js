@@ -231,7 +231,7 @@ function matchSelected() {
 			// Add failure feedback image
 			const failureImg = document.createElement('img');
 			failureImg.src = 'images/crying.png'; // Add your incorrect feedback image path
-			failureImg.alt = '匹配错误！';
+			failureImg.alt = 'error!';
 			failureImg.className = 'feedback-image bump-up';
 			feedbackContainer.appendChild(failureImg);
 		}

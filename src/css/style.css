@@ -536,16 +536,21 @@ Home
 		transform: translateY(0);
 	}
 
-
 	50% {
 		transform: translateY(-10px);
 	}
-
 
 	100% {
 		transform: translateY(0);
 	}
 }
+
+
+
+
+
+
+
 
 
 
@@ -564,14 +569,11 @@ Home
 	position: relative;
 }
 
-
 .feedback-container img {
 	max-width: 100%;
 	height: auto;
 	object-fit: contain;
 }
-
-
 
 
 /*

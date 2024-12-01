@@ -128,28 +128,28 @@ Home
 }
 
 
-.selections-practice {
-	width: 70%;
-	height: 3%;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	gap: 15%;
-}
-
 .selections-practice a {
 	border-radius: 90px;
 	border: none;
 	background: #FFC875;
 	font-family: 'Kanit', sans-serif;
-	font-size: calc(20px + 2vw);
+	font-size: calc(15px + 2vw);
 	font-weight: 600;
 	text-decoration: none;
 	color: #675741;
 	text-align: center;
 	padding: 0 5%;
+}
 
-
+.selections-practice {
+	width: 70%;
+	height: 3%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); 
+	grid-row: 1;
+	position: relative;
+	align-items: center;
+	gap: 15%;
 }
 
 

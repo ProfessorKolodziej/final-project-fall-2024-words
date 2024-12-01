@@ -83,7 +83,7 @@ Home
 
 .navigation h2,
 .navigation h3 {
-	font-size: calc(45px + 2vw) !important;
+	font-size: calc(40px + 2vw) !important;
 }
 
 .navigation .practice-nav {
@@ -121,7 +121,7 @@ Home
 	font-family: 'Kanit', sans-serif;
 	font-size: calc(20px + 2vw);
 	font-weight: 600;
-	margin: 15% 0;
+	margin: 8% 0;
 	width: 100%;
 	text-decoration: none;
 	color: #675741;
@@ -134,7 +134,7 @@ Home
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	gap: 25%;
+	gap: 15%;
 }
 
 .selections-practice a {
@@ -193,7 +193,7 @@ Home
 
 
 .left-column img {
-	width: 100%;
+	width: 80%;
 	height: auto;
 	max-width: 500px;
 }
@@ -342,19 +342,19 @@ Home
 
 /* Progress bar */
 .progress-bar {
-    position: absolute;
+	position: absolute;
 	margin-top: 15%;
-    display: flex;
-    align-items: center;
-    background-color: #c2c0c0;
-    z-index: 1000;
-    mix-blend-mode: darken;
-    bottom: 70%;
-    width: 80%; 
-    height: 2%;
-    max-width: 800px; 
-    left: 50%; 
-    transform: translateX(-50%); 
+	display: flex;
+	align-items: center;
+	background-color: #c2c0c0;
+	z-index: 1000;
+	mix-blend-mode: darken;
+	bottom: 70%;
+	width: 80%;
+	height: 2%;
+	max-width: 800px;
+	left: 50%;
+	transform: translateX(-50%);
 	bottom: 65%;
 }
 

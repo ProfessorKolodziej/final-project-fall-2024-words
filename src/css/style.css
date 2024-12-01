@@ -32,8 +32,8 @@ Home
 	color: #4545A0;
 	text-align: center;
 	font-family: 'KoHo', sans-serif;
-	font-size: calc(80px + 5vw);
-	margin-bottom: 12%;
+	font-size: calc(80px + 4vw);
+	margin-bottom: 10%;
 	text-decoration: none;
 }
 
@@ -52,7 +52,7 @@ Home
 	border-radius: 90px;
 	border: none;
 	display: flex;
-	padding: 5%;
+	padding: 2%;
 	align-items: center;
 	text-align: center;
 	font-family: 'Kanit', sans-serif;
@@ -129,15 +129,13 @@ Home
 
 
 .selections-practice {
-	width: 50%;
+	width: 70%;
+	height: 3%;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	gap: 25%;
 }
-
-
-
 
 .selections-practice a {
 	border-radius: 90px;
@@ -289,6 +287,15 @@ Home
 	text-align: center;
 }
 
+.practice-p {
+	font-size: calc(35px + 2vw);
+	color: #4545A0;
+	text-align: center;
+	font-family: 'Sour Gummy', sans-serif;
+	margin-bottom: 10%;
+	margin-top: 20%;
+	align-items: center;
+}
 
 .result {
 	display: flex;
